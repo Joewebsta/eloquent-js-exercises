@@ -1,21 +1,15 @@
-let output = '';
-let pound = false;
 let size = 8;
+let output = "";
 
-for (i = 1; i <= (size ** 2); i++) {
-
-  if (pound) {
-    output += '#';
-    pound = !pound;
-  } else {
-    output += ' ';
-    pound = !pound;
+for (let i = 0; i < size; i++) {
+  for (let j = 0; j < size; j++) {
+    if ((j + i) % 2 == 0) {
+      output += " ";
+    } else {
+      output += "#";
+    }
   }
-
-  if (i % size === 0) {
-    output += '\n';
-    pound = !pound;
-  }
+  output += "\n";
 }
 
 console.log(output);
