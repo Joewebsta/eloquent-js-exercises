@@ -8,6 +8,11 @@ function countChar(string, char) {
   return count;
 }
 
-console.log(countChar('BaseBall BatsBB', 's'));
-console.log(countChar("BBC", 'B'));
+function countBs(string) {
+  return countChar(string, 'B');
+}
+
+
+console.log(countBs("BBC"));
 console.log(countChar("kakkerlak", "k"));
+console.log(countChar('BaseBall BatsBB', 's'));
