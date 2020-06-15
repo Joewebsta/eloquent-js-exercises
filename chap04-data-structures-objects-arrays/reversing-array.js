@@ -3,7 +3,6 @@ function reverseArray(array) {
   for (val of array) {
     reversedArray.unshift(val);
   }
- 
   return reversedArray;
 }
 
