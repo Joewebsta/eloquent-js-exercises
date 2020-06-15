@@ -20,8 +20,12 @@ function listToArray(list) {
   return array;
 }
 
+function prepend(elem, list) {
+  return {value: elem, rest: list};
+}
 
 
 // console.log(arrayToList([1,2,3]));
 // console.log(arrayToList([10, 20]));
 // console.log(listToArray(arrayToList([10, 20, 30])));
+console.log(prepend(10, prepend(20, null)));
