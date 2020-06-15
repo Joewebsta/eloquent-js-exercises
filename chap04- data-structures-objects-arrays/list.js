@@ -26,6 +26,6 @@ function prepend(elem, list) {
 
 
 // console.log(arrayToList([1,2,3]));
-// console.log(arrayToList([10, 20]));
+console.log(arrayToList([10, 20, 30]));
 // console.log(listToArray(arrayToList([10, 20, 30])));
-console.log(prepend(10, prepend(20, null)));
+// console.log(prepend(10, prepend(20, null)));
